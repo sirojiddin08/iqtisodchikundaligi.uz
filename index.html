@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <title>Economist.uz</title>
+
+    <style>
+        :root {
+            --color-primary: hsl(310, 100%, 65%);
+            --color-secondary: hsl(160, 100%, 65%);
+            --background: hsl(230, 30%, 15%);
+            --text: hsl(310, 100%, 95%);
+        }
+
+        body::-webkit-scrollbar {
+            width: .2em;
+        }
+
+        body::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px #1918584d;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #45508a;
+            outline: 1px solid #1B1F32;
+        }
+
+        ::selection {
+            background-color: var(--color-primary);
+            color: var(--background);
+            -webkit-text-fill-color: var(--background);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            place-content: center;
+            gap: 4vh;
+            min-height: 100vh;
+            width: min(60ch, 100vw - 2rem);
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 img {
+            margin-right: 1rem;
+            /* Adjust the spacing between the image and text */
+        }
+
+
+        blockquote {
+            border-left: 5px solid;
+            margin-left: 0;
+            padding: 1rem 0 1rem 2rem;
+            font-size: 2rem;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+            background-image: linear-gradient(35deg,
+                    var(--color-primary),
+                    var(--color-secondary));
+        }
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            width: 210px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        span a {
+            color: rgb(44, 140, 224);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> <img src="assets/photo.jpg" alt="Behzod Hoshimov"> <code>::Behzod Hoshimov</code></h1>
+
+    <p>Ushbu web-sahifa iqtisodchi Behzod Hoshimov uchun tayyorlanmoqda...</p>
+
+    <blockquote>
+        <p>Behzod Alisherovich Hoshimov — o'zbekistonlik ko'zga ko'ringan iqtisodchi, kolumnist.
+            Telegram ijtimoiy tarmog'idagi <a href="https://t.me/iqtisodchi_kundaligi">"Iqtisodchi kundaligi"</a> blogi,
+            YouTubedagi "Hoshimov's Economics (Hoshimov Iqtisodiyoti)" videoblogi,
+            Kun.uz, Gazeta.uz va shu kabi O'zbekiston hududida ommalashgan axborot portallaridagi tahliliy maqolalari
+            bilan tanilgan.
+        </p>
+    </blockquote>
+
+    <span>Bog'lanish uchun: <a href="https://t.me/Sirojiddin_Rahimov">Sirojiddin</a></span>
+</body>
+
+</html>
